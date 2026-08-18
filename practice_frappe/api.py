@@ -1,11 +1,15 @@
-# import time
+import time
 
-# def sample_job():
-#     print("Job Started")
+def sample_job():
+    print("Job Started")
 
-#     time.sleep(10)
+    time.sleep(10)
 
-#     print("Job Finished")    
+    print("Job Finished")
+
+
+    
+'''
 import frappe
 import time
 from frappe.utils import now_datetime
@@ -26,3 +30,4 @@ def sample_job():
 
     duration = end_time - start_time
     print(f"Duration   : {duration}")
+    '''

@@ -13,6 +13,11 @@ scheduler_events = {
 }
 
 
+doc_events = {
+    "ToDo": {
+        "validate": "practice_frappe.api.custom_logic.todo_validate"
+    }
+}
 
 # Apps
 # ------------------
@@ -213,14 +218,14 @@ scheduler_events = {
 #ignore_links_on_delete = ["Student Attendence"]
 
 # Request Events
-# ----------------
+# # ----------------
 # before_request = ["practice_frappe.utils.before_request"]
 # after_request = ["practice_frappe.utils.after_request"]
 
 # Job Events
 # ----------
-#before_job = ["practice_frappe.utils.before_job"]
-#after_job = ["practice_frappe.utils.after_job"]
+before_job = ["practice_frappe.utils.before_job"]
+after_job = ["practice_frappe.utils.after_job"]
 
 # User Data Protection
 # --------------------

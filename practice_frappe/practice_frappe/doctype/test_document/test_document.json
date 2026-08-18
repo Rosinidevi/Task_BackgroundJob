@@ -2,51 +2,26 @@
  "actions": [],
  "allow_bulk_edit": 1,
  "allow_rename": 1,
- "creation": "2026-08-17 15:22:37.358568",
+ "creation": "2026-08-18 18:23:08.562437",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "student_name",
-  "age",
-  "dept",
-  "status",
-  "mark"
+  "description"
  ],
  "fields": [
   {
-   "fieldname": "student_name",
+   "fieldname": "description",
    "fieldtype": "Data",
-   "label": "Student Name"
-  },
-  {
-   "fieldname": "age",
-   "fieldtype": "Int",
-   "label": "Age"
-  },
-  {
-   "fieldname": "dept",
-   "fieldtype": "Data",
-   "label": "Dept"
-  },
-  {
-   "fieldname": "status",
-   "fieldtype": "Select",
-   "label": "Status",
-   "options": "Pending\nCompleted"
-  },
-  {
-   "fieldname": "mark",
-   "fieldtype": "Int",
-   "label": "Mark"
+   "label": "Description"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-08-18 12:07:32.544776",
+ "modified": "2026-08-18 18:24:30.977823",
  "modified_by": "Administrator",
  "module": "Practice Frappe",
- "name": "Student",
+ "name": "Test Document",
  "owner": "Administrator",
  "permissions": [
   {
