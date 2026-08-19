@@ -1,12 +1,8 @@
 import frappe
-
-
 @frappe.whitelist()
 def process_students():
-
     Student = frappe.qb.DocType("Student")
     Department = frappe.qb.DocType("Department")
-
     results = (
         frappe.qb.from_(Student)
         .join(Department)
@@ -25,7 +21,6 @@ def process_students():
 
     if not results:
         return []
-
     doc = frappe.get_doc("Student", results[0]["name"])
     doc.mark = doc.mark + 5
     doc.save()
@@ -37,5 +32,4 @@ def process_students():
             "status",
             "Completed"
         )
-
     return results
