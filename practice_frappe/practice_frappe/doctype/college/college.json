@@ -2,35 +2,59 @@
  "actions": [],
  "allow_bulk_edit": 1,
  "allow_rename": 1,
- "autoname": "field:department_name",
- "creation": "2026-08-19 11:24:34.920945",
+ "creation": "2026-08-27 11:37:30.569345",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "department_name",
-  "hod"
+  "column_break_ihru",
+  "student_name",
+  "department",
+  "hod",
+  "day",
+  "colour"
  ],
  "fields": [
   {
-   "fieldname": "department_name",
+   "fieldname": "student_name",
    "fieldtype": "Data",
-   "label": "Department name",
-   "unique": 1
+   "label": "Student Name"
   },
   {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fetch_from": "department.hod",
+   "fetch_if_empty": 1,
    "fieldname": "hod",
    "fieldtype": "Data",
    "label": "HOD"
+  },
+  {
+   "fieldname": "column_break_ihru",
+   "fieldtype": "Column Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "day",
+   "fieldtype": "Data",
+   "label": "Day"
+  },
+  {
+   "fieldname": "colour",
+   "fieldtype": "Color",
+   "label": "colour"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-08-27 11:41:47.607855",
+ "modified": "2026-08-29 11:50:17.687412",
  "modified_by": "Administrator",
  "module": "Practice Frappe",
- "name": "Department",
- "naming_rule": "By fieldname",
+ "name": "College",
  "owner": "Administrator",
  "permissions": [
   {

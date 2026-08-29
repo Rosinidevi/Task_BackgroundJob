@@ -2,6 +2,7 @@
  "actions": [],
  "allow_bulk_edit": 1,
  "allow_rename": 1,
+ "autoname": "field:student_name",
  "creation": "2026-08-17 15:22:37.358568",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -10,18 +11,25 @@
   "age",
   "dept",
   "status",
-  "mark"
+  "mark",
+  "skills",
+  "preferences_json",
+  "amended_from",
+  "email"
  ],
  "fields": [
   {
    "fieldname": "student_name",
    "fieldtype": "Data",
-   "label": "Student Name"
+   "label": "Student Name",
+   "sticky": 1,
+   "unique": 1
   },
   {
    "fieldname": "age",
    "fieldtype": "Int",
-   "label": "Age"
+   "label": "Age",
+   "permlevel": 1
   },
   {
    "fieldname": "dept",
@@ -39,15 +47,44 @@
    "fieldname": "mark",
    "fieldtype": "Int",
    "label": "Mark"
+  },
+  {
+   "fieldname": "skills",
+   "fieldtype": "Table MultiSelect",
+   "label": "Skills",
+   "options": "Student Skill"
+  },
+  {
+   "fieldname": "preferences_json",
+   "fieldtype": "JSON",
+   "label": "Preferences_Json"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Student",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "options": "Email",
+   "sticky": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-08-19 11:26:03.506905",
+ "modified": "2026-08-27 16:41:43.271183",
  "modified_by": "Administrator",
  "module": "Practice Frappe",
  "name": "Student",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -61,11 +98,21 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts User",
+   "share": 1
   }
  ],
  "row_format": "Dynamic",
  "rows_threshold_for_grid_search": 20,
  "sort_field": "creation",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "track_views": 1
 }

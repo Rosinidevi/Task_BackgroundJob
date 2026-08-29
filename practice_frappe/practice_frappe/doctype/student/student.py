@@ -1,9 +1,27 @@
-# Copyright (c) 2026, Roshini and contributors
-# For license information, please see license.txt
-
-# import frappe
+import frappe
 from frappe.model.document import Document
 
 
 class Student(Document):
-	pass
+    pass
+"""
+import frappe
+from frappe.model.document import Document
+
+
+class Student(Document):
+
+    def validate(self):
+
+        if frappe.session.user == "Guest":
+            frappe.throw("You must be logged in")
+        student = frappe.db.get_value(
+            "Student",
+            {"email": frappe.session.user},
+            "name"
+        )
+
+        if not student:
+            frappe.throw("Student record not found")
+        self.student = student
+        """

@@ -1,3 +1,4 @@
+"""
 import time
 
 def sample_job():
@@ -7,7 +8,7 @@ def sample_job():
 
     print("Job Finished")
 
-
+"""
     
 '''
 import frappe
@@ -31,3 +32,28 @@ def sample_job():
     duration = end_time - start_time
     print(f"Duration   : {duration}")
     '''
+
+import frappe
+
+
+@frappe.whitelist()
+def create_customer_user(email, student_name, password):
+
+    if frappe.db.exists("User", {"email": email}):
+        frappe.throw("User already exists for this email")
+
+    user = frappe.new_doc("User")
+
+    user.email = email
+    user.first_name = student_name
+
+
+    user.new_password = password
+
+    user.append("roles", {
+        "role": "Accounts User"
+    })
+
+    user.insert(ignore_permissions=True)
+
+    return user.name
