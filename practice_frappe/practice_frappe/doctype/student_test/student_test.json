@@ -2,16 +2,13 @@
  "actions": [],
  "allow_bulk_edit": 1,
  "allow_rename": 1,
- "creation": "2026-08-27 11:37:30.569345",
+ "autoname": "prompt",
+ "creation": "2026-09-07 21:32:05.791232",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "column_break_ihru",
   "student_name",
-  "department",
-  "hod",
-  "day",
-  "colour"
+  "department"
  ],
  "fields": [
   {
@@ -21,40 +18,18 @@
   },
   {
    "fieldname": "department",
-   "fieldtype": "Link",
-   "label": "Department",
-   "options": "Department"
-  },
-  {
-   "fetch_from": "department.hod",
-   "fetch_if_empty": 1,
-   "fieldname": "hod",
    "fieldtype": "Data",
-   "label": "HOD"
-  },
-  {
-   "fieldname": "column_break_ihru",
-   "fieldtype": "Column Break",
-   "hidden": 1
-  },
-  {
-   "fieldname": "day",
-   "fieldtype": "Data",
-   "label": "Day"
-  },
-  {
-   "fieldname": "colour",
-   "fieldtype": "Color",
-   "label": "colour"
+   "label": "Department"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-08-29 11:50:17.687412",
+ "modified": "2026-09-08 14:21:00.261258",
  "modified_by": "Administrator",
  "module": "Practice Frappe",
- "name": "College",
+ "name": "Student Test",
+ "naming_rule": "Set by user",
  "owner": "Administrator",
  "permissions": [
   {

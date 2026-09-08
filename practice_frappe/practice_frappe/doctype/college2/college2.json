@@ -2,7 +2,7 @@
  "actions": [],
  "allow_bulk_edit": 1,
  "allow_rename": 1,
- "autoname": "field:dept",
+ "autoname": "prompt",
  "creation": "2026-08-27 12:27:28.690459",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -13,15 +13,14 @@
   "day",
   "account_no",
   "status",
-  "check",
-  "colour"
+  "colour",
+  "naming_series"
  ],
  "fields": [
   {
    "alignment": "Left",
    "fieldname": "student_name",
    "fieldtype": "Data",
-   "hidden": 1,
    "label": "Student Name",
    "max_height": "20px",
    "not_nullable": 1,
@@ -51,36 +50,37 @@
   },
   {
    "alignment": "Left",
+   "default": "1234567890",
    "fieldname": "account_no",
    "fieldtype": "Data",
    "label": "Account no"
   },
   {
+   "default": "Completed",
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
    "options": "Pending\nCompleted"
   },
   {
-   "default": "0",
-   "fieldname": "check",
-   "fieldtype": "Check",
-   "label": "check"
-  },
-  {
    "fieldname": "colour",
    "fieldtype": "Color",
    "label": "colour"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "STD-.####"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-08-29 13:03:10.341848",
+ "modified": "2026-09-08 12:05:22.312463",
  "modified_by": "Administrator",
  "module": "Practice Frappe",
  "name": "College2",
- "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

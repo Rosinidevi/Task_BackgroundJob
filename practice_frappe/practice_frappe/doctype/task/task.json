@@ -6,7 +6,8 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "subject"
+  "subject",
+  "active"
  ],
  "fields": [
   {
@@ -14,16 +15,24 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Subject",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "active",
+   "fieldtype": "Check",
+   "label": "active"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-08-29 14:24:27.850618",
+ "modified": "2026-09-07 13:42:13.763395",
  "modified_by": "Administrator",
  "module": "Practice Frappe",
  "name": "Task",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

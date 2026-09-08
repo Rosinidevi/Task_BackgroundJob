@@ -8,7 +8,8 @@
  "engine": "InnoDB",
  "field_order": [
   "department_name",
-  "hod"
+  "hod",
+  "active"
  ],
  "fields": [
   {
@@ -21,12 +22,18 @@
    "fieldname": "hod",
    "fieldtype": "Data",
    "label": "HOD"
+  },
+  {
+   "default": "0",
+   "fieldname": "active",
+   "fieldtype": "Check",
+   "label": "active"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-08-27 11:41:47.607855",
+ "modified": "2026-09-07 13:45:02.135371",
  "modified_by": "Administrator",
  "module": "Practice Frappe",
  "name": "Department",

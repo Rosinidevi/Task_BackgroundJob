@@ -15,7 +15,8 @@
   "skills",
   "preferences_json",
   "amended_from",
-  "email"
+  "email",
+  "books"
  ],
  "fields": [
   {
@@ -75,12 +76,18 @@
    "label": "Email",
    "options": "Email",
    "sticky": 1
+  },
+  {
+   "fieldname": "books",
+   "fieldtype": "Table",
+   "label": "Books",
+   "options": "Books"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-08-27 16:41:43.271183",
+ "modified": "2026-09-08 12:50:27.280798",
  "modified_by": "Administrator",
  "module": "Practice Frappe",
  "name": "Student",
