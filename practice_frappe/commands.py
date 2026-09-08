@@ -1,5 +1,5 @@
 import click 
-@click.command("hello")
+@click.command("hello-app")
 def hello():
     click.echo("hello, I am working....")
 commands=[hello]
