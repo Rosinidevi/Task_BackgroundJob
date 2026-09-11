@@ -75,12 +75,14 @@
   }
  ],
  "grid_page_length": 50,
+ "in_create": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-09-08 12:05:22.312463",
+ "modified": "2026-09-08 17:53:05.669103",
  "modified_by": "Administrator",
  "module": "Practice Frappe",
  "name": "College2",
+ "naming_rule": "Set by user",
  "owner": "Administrator",
  "permissions": [
   {

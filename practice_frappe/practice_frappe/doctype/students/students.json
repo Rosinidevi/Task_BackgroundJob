@@ -1,36 +1,64 @@
 {
  "actions": [],
  "allow_bulk_edit": 1,
+ "allow_import": 1,
  "allow_rename": 1,
- "autoname": "prompt",
- "creation": "2026-09-07 21:32:05.791232",
+ "creation": "2026-09-09 14:18:42.177059",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "student_name",
-  "department"
+  "student_id",
+  "name1",
+  "age",
+  "gender",
+  "department",
+  "marks",
+  "city"
  ],
  "fields": [
   {
-   "fieldname": "student_name",
+   "fieldname": "student_id",
    "fieldtype": "Data",
-   "label": "Student Name",
-   "unique": 1
+   "label": "Student_ID"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Int",
+   "label": "Age"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Data",
+   "label": "Gender"
   },
   {
    "fieldname": "department",
    "fieldtype": "Data",
    "label": "Department"
+  },
+  {
+   "fieldname": "marks",
+   "fieldtype": "Int",
+   "label": "Marks"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-09-08 16:49:43.902728",
+ "modified": "2026-09-09 14:26:55.335278",
  "modified_by": "Administrator",
  "module": "Practice Frappe",
- "name": "Student Test",
- "naming_rule": "Set by user",
+ "name": "Students",
  "owner": "Administrator",
  "permissions": [
   {

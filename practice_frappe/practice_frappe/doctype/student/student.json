@@ -16,7 +16,8 @@
   "preferences_json",
   "amended_from",
   "email",
-  "books"
+  "books",
+  "description"
  ],
  "fields": [
   {
@@ -82,12 +83,17 @@
    "fieldtype": "Table",
    "label": "Books",
    "options": "Books"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-09-08 12:50:27.280798",
+ "modified": "2026-09-10 13:01:21.408287",
  "modified_by": "Administrator",
  "module": "Practice Frappe",
  "name": "Student",
