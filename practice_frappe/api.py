@@ -31,8 +31,10 @@ def sample_job():
 
     duration = end_time - start_time
     print(f"Duration   : {duration}")
+  
+  
     '''
-
+'''
 import frappe
 
 
@@ -57,3 +59,13 @@ def create_customer_user(email, student_name, password):
     user.insert(ignore_permissions=True)
 
     return user.name
+    ''''
+import frappe
+
+
+@frappe.whitelist(allow_guest=True)
+def limited_greeting():
+    logger = frappe.logger()
+    logger.info("Endpoint called.")
+
+    frappe.response["message"] = "Hello, Rate Limited World!"
