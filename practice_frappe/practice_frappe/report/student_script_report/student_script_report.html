@@ -1,0 +1,25 @@
+<div class="print-format">
+
+    <h2>Student Script Report</h2>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Student Name</th>
+                <th>Department</th>
+                <th>Mark</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <% data.forEach(function(row) { %>
+                <tr>
+                    <td><%= row.student_name %></td>
+                    <td><%= row.dept %></td>
+                    <td><%= format_money(row.mark) %></td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+
+</div>
