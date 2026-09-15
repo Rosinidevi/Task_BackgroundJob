@@ -6,6 +6,9 @@ app_email = "rosinidevi6@gmail.com"
 app_license = "mit"
 
 
+
+fixtures = ["Client Script"]
+
 scheduler_events = {
     "daily": [
         "practice_frappe.tasks.daily_maintenance"
